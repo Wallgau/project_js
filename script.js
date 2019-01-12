@@ -1,6 +1,8 @@
 //step1
 $(document).ready(function(){
-	let userScore = 0;
+	
+	
+	
 	//event listener
 	$('button').on('click', function(event){ 
 		event.preventDefault();
@@ -37,18 +39,21 @@ $(document).ready(function(){
 	const clickBallon = (hasClass, ballon) => {
 		if(hasClass){
 			ballon.removeClass('red-circle');
+
 			userScore = userScore + 1;
 			console.log(userScore);
+			//put the userScore inside of html to show the score 
+			document.getElementById('scoreUser').innerHTML = userScore;
 			return randChangeColor();
 		}
 		userScore = userScore - 1;
+		document.getElementById('scoreUser').innerHTML = userScore;
 		console.log(userScore);
 		return;
 		
 		
 	};
-
-
+let userScore = 0;
 
 
 	
