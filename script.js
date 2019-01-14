@@ -72,6 +72,7 @@ $(document).ready(function() {
                 $('#userScore ').css("display", "none");
                 time = 0;
                 $('#count').css("display", "none");
+                location.reload()
 
 
             }));
@@ -90,12 +91,11 @@ $(document).ready(function() {
 
     }
 
-
-
     // for loop to make the timer
 
     const counter = () => {
         let time = 0;
+
         for (var i = 20; i > -1; i--) { //to make i decrement from 20 to 0
             setTimeout((function(s) {
                 return function() {
