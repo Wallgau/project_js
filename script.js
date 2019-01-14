@@ -7,6 +7,7 @@ $(document).ready(function() {
         $('#intro').hide();
         $('#count').css("display", "block");
         document.getElementById('end-game ').innerHTML = "Stay focus";
+        userScore = 0;
         $('#userScore ').css("display", "block");
         counter();
         randChangeColor();
@@ -76,9 +77,6 @@ $(document).ready(function() {
                 time = 0;
                 $('#count').css("display", "none");
                 setTimeout(function() { location.reload() }, 3000);
-
-
-
             }));
 
 
