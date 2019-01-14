@@ -76,7 +76,7 @@ $(document).ready(function() {
                 $('#userScore ').css("display", "none");
                 time = 0;
                 $('#count').css("display", "none");
-                setTimeout(function() { location.reload() }, 3000);
+                setTimeout(function() { location.reload() }, 1000);
             }));
 
 
