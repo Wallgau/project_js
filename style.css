@@ -253,22 +253,14 @@ template {
     main {
         margin: 8%;
     }
-    .button-start {
-        margin-top: 20%;
-    }
-    #intro {
-        padding-top: 10%
-    }
-    #scoreUser {
-        padding-top: 15%;
-    }
+   
 }
 
 @media screen and (max-width: 375px) {
     #start.play {
-        grid-column: 1/4;
+       
         text-align: center;
-        margin-top: 15%;
+       
         border: 1px solid black;
     }
     /*  #count.timer { 
@@ -279,7 +271,7 @@ template {
         padding-top: 2%
     } */
     #end.fin {
-        grid-column: 1/4;
+       
         margin-bottom: 15%
     }
     header .button-start {
@@ -316,47 +308,31 @@ template {
     justify-content: center;
 }
 
-.play {
-    width: 100px;
-    height: 50px;
-    background: ThreeDLightShadow;
-    border-radius: 10px 10px;
-    position: relative;
-}
+
 
 .button-start {
-    display: grid;
-    grid-gap: 5px;
-    grid-auto-rows: auto;
-    grid-auto-columns: 45% 8% 45%;
-    position: relative;
-    height: 250px;
+    display:flex;
+    padding: 10%;
+    text-align:center;
+    justify-content: space-between;
     border: 1px solid darkcyan;
     background-color: darkcyan;
     border-radius: 10px 10px;
 }
 
 #start {
-    grid-column: 1 / 2;
-    position: relative;
-    margin: auto;
-    width: 50%;
-    height: 35%;
+    width: 33%;
+    padding: 2%;
+    border-radius: 15px;
     box-shadow: 5px 5px 5px ThreeDLightShadow;
-    transform: scale(1.6);
 }
 
 #end {
-    width: 50%;
-    height: 35%;
+    width: 33%;
+    padding: 2%;
     background: purple;
     border-radius: 10px 10px;
-    position: absolute;
-    margin: auto;
-    grid-column: 3 / 4;
-    position: relative;
     box-shadow: 5px 5px 5px purple;
-    transform: scale(1.6);
 }
 
 #scoreUser {
@@ -371,10 +347,9 @@ body {
 }
 
 #count {
-    grid-column: 2 / 3;
     color: white;
-    font-size: 4em;
-    margin: auto;
+    font-size: 3em;
+    width: 20%;
 }
 
 .fa-play-circle:before {
@@ -411,6 +386,5 @@ main {
     color: white;
     text-align: center;
     margin: 3%;
-    padding: 5%;
     height: 10%;
 }
