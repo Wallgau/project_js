@@ -263,20 +263,8 @@ template {
        
         border: 1px solid black;
     }
-    /*  #count.timer { 
-        grid-column: 1/4;
-        margin: 0;
-        height: auto;
-        text-align: center;
-        padding-top: 2%
-    } */
-    #end.fin {
-       
-        margin-bottom: 15%
-    }
-    header .button-start {
-        margin: 5%;
-    }
+   
+    
     .far {
         font-size: 8px;
     }
@@ -306,18 +294,22 @@ template {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 
 
 .button-start {
     display:flex;
-    padding: 10%;
+    padding: 7%;
     text-align:center;
     justify-content: space-between;
     border: 1px solid darkcyan;
     background-color: darkcyan;
     border-radius: 10px 10px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #start {
@@ -331,7 +323,7 @@ template {
     width: 33%;
     padding: 2%;
     background: purple;
-    border-radius: 10px 10px;
+    border-radius: 15px;
     box-shadow: 5px 5px 5px purple;
 }
 
@@ -340,7 +332,7 @@ template {
 }
 
 body {
-    background-color: black;
+    background-color: #262626;
     /* background-image: url('images/background-game.jpeg'); */
     background-size: cover;
     font-family: 'Staatliches', cursive;
