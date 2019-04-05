@@ -21,7 +21,13 @@ $(document).ready(function () {
         const randNumber = Math.floor(Math.random() * numberOfBallon);
         const randBallon = $(`main figure:nth-child(${randNumber})`);
         randBallon.addClass('yellow-circle');
+        TweenMax.to('.yellow-circle', 2, {x: 20, z:20, scale:1.5});
+    
+
+
     };
+
+
 
     // when the user clicks on a figure
     // - IF the figure has a class of yellow-circle, 
@@ -32,6 +38,7 @@ $(document).ready(function () {
         const ballon = $(this); //ici this fait référence au ballon qu'on vient de cliquer, c'est ce ballon pas tous les ballon
         const figureHasClass = ballon.hasClass('yellow-circle'); //ici implicitement Ã§a return true
         clickBallon(figureHasClass, ballon);
+
     });
 
     // 2) increase the score by 1
